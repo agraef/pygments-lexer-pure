@@ -4,7 +4,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1'
+version = '0.2'
 long_description = open('README.rst').read();
 
 classifiers = [
@@ -32,8 +32,8 @@ setup(
     packages=find_packages(),
     install_requires=['pygments >= 1.5'],
     entry_points="""
-        [pygments.lexer]
-        pure=pure_lexer.pure:PureLexer
+        [pygments.lexers]
+        Pure=pure_lexer.pure:PureLexer
     """,
     zip_safe=False,
 )

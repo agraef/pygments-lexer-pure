@@ -1,3 +1,16 @@
+# -*- coding: utf-8 -*-
+"""
+    pure_lexer.pure
+    ~~~~~~~~~~~~~~~
+
+    Lexer for the Pure language.
+"""
+
+import re
+
+from pygments.lexer import Lexer, RegexLexer, bygroups, include, do_insertions
+from pygments.token import Text, Comment, Operator, Keyword, Name, \
+     String, Number, Punctuation, Literal, Generic
 
 class PureLexer(RegexLexer):
     """
